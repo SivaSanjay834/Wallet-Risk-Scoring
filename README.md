@@ -1,12 +1,21 @@
-Wallet Risk Scoring
-Overview
+## Wallet Risk Scoring
+
+## Overview
+
+
 This project calculates a risk score (0–1000) for a list of wallet addresses based on their lending and borrowing behavior on DeFi protocols like Compound V2/V3.
 A higher score indicates a higher probability of liquidation or risky borrowing patterns.
 
-Methodology
-Data Source: Wallet addresses provided; synthetic data generated to simulate Compound transactions (borrowed amount, supplied amount, repayment history, and liquidation events).
+## Methodology
 
-Feature Engineering:
+
+## Data Source:
+
+Wallet addresses provided; synthetic data generated to simulate Compound transactions (borrowed amount, supplied amount, repayment history, and liquidation events).
+
+
+## Feature Engineering:
+
 
 Borrow to Supply Ratio (BSR) – Higher ratio → Higher risk
 
@@ -18,10 +27,12 @@ Volatile Asset Ratio – More volatile collateral → Higher risk
 
 Activity Level – Long inactive wallets are riskier
 
-Scoring Logic:
+## Scoring Logic:
+
 All features are normalized (Min-Max scaling) and combined using a weighted scoring formula, finally scaled to 0–1000.
 
-Output
+## Output
+
 The final output is a CSV file:
 
 wallet_id	score
