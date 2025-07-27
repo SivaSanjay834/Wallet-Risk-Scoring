@@ -35,10 +35,12 @@ All features are normalized (Min-Max scaling) and combined using a weighted scor
 
 The final output is a CSV file:
 
-wallet_id	score
+wallet_id	                                 score
+
 0x0039f22efb07a647557c7c5d17854cfd6d489ef3	732
 
-Future Scope
+## Future Scope
+
 Replace synthetic data with real on-chain data using The Graph or Etherscan API.
 
 Extend scoring to other protocols like Aave, MakerDAO, etc.
